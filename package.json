@@ -1,0 +1,64 @@
+{
+  "name": "foo",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "tsm": "typed-scss-modules src --implementation sass --nameFormat none --exportType default",
+    "tsm:watch": "yarn tsm --watch",
+    "lint": "npm run lint:eslint && npm run lint:prettier",
+    "lint:eslint": "eslint \"./{src,test}/**/*.{js,ts,tsx,svelte}\" --fix",
+    "lint:prettier": "prettier \"./{src,test}/**/*.{js,ts,tsx,svelte}\" --write",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "dependencies": {
+    "clsx": "^1.2.1",
+    "next": "12.2.5",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "sass": "^1.54.5",
+    "ts-pattern": "^4.0.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.13",
+    "@ergosign/storybook-addon-pseudo-states-react": "^0.0.1-alpha.59",
+    "@kobakazu0429/eslint-config-typescript-react": "^3.1.1",
+    "@storybook/addon-actions": "^6.5.10",
+    "@storybook/addon-essentials": "^6.5.10",
+    "@storybook/addon-interactions": "^6.5.10",
+    "@storybook/addon-links": "^6.5.10",
+    "@storybook/builder-webpack5": "^6.5.10",
+    "@storybook/manager-webpack5": "^6.5.10",
+    "@storybook/react": "^6.5.10",
+    "@storybook/testing-library": "^0.0.13",
+    "@types/node": "18.7.13",
+    "@types/react": "18.0.17",
+    "@types/react-dom": "18.0.6",
+    "babel-loader": "^8.2.5",
+    "css-loader": "^6.7.1",
+    "eslint": "^8.23.0",
+    "eslint-config-next": "12.2.5",
+    "postcss": "^8.4.16",
+    "postcss-loader": "^7.0.1",
+    "postcss-pseudo-classes": "https://github.com/philippone/postcss-pseudo-classes.git",
+    "sass-loader": "^13.0.2",
+    "style-loader": "^3.3.1",
+    "typed-scss-modules": "^6.5.0",
+    "typescript": "4.8.2"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
